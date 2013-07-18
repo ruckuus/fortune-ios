@@ -13,6 +13,7 @@
 
 @interface FRTNViewController () {
     NSArray *jsonResponse;
+    NSString *fortuneText;
 }
 @end
 
@@ -30,7 +31,7 @@
         
         jsonResponse = JSON;
         
-        NSString * fortuneText = [jsonResponse valueForKey:@"text"];
+        fortuneText = [jsonResponse valueForKey:@"text"];
         NSLog(@"Fortune Text: %@", fortuneText);
         
         self.messageLabel.text = fortuneText;
@@ -44,6 +45,8 @@
 }
 
 #pragma mark - Touch Event Methods
+
+/*
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     self.messageLabel.text = @"Touches Began";
@@ -54,17 +57,19 @@
     self.messageLabel.text = @"Touches Cancelled";
     [self updateLabelsFromTouches:touches];
 }
+ */
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
   
     self.messageLabel.text = @"Touches Ended.";
     [self updateLabelsFromTouches:touches];
 }
+/*
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     self.messageLabel.text = @"Drag Detected";
     [self updateLabelsFromTouches:touches];
 }
-
+*/
 
 @end
