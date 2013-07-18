@@ -454,6 +454,7 @@
 				D7C8630C17986ABF0071A656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7C8630D17986ABF0071A656 /* Build configuration list for PBXNativeTarget "FortuneTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +463,7 @@
 				D7C8630F17986ABF0071A656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
