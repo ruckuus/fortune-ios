@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B81D0835FF34F77A3C3FF68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F350A6D573C441C1B17711E4 /* libPods.a */; };
+		D74D3F1617987E7E00911D05 /* FRTNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D3F1517987E7E00911D05 /* FRTNClient.m */; };
 		D7C862D617986ABF0071A656 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D517986ABF0071A656 /* UIKit.framework */; };
 		D7C862D817986ABF0071A656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D717986ABF0071A656 /* Foundation.framework */; };
 		D7C862DA17986ABF0071A656 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D917986ABF0071A656 /* CoreGraphics.framework */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D74D3F1417987E7E00911D05 /* FRTNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTNClient.h; sourceTree = "<group>"; };
+		D74D3F1517987E7E00911D05 /* FRTNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTNClient.m; sourceTree = "<group>"; };
 		D7C862D217986ABF0071A656 /* Fortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C862D517986ABF0071A656 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7C862D717986ABF0071A656 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +62,8 @@
 		D7C8630317986ABF0071A656 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7C8630517986ABF0071A656 /* FortuneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FortuneTests.h; sourceTree = "<group>"; };
 		D7C8630617986ABF0071A656 /* FortuneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FortuneTests.m; sourceTree = "<group>"; };
+		F350A6D573C441C1B17711E4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E41C7EC13949319F3B4E69 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				D7C862D617986ABF0071A656 /* UIKit.framework in Frameworks */,
 				D7C862D817986ABF0071A656 /* Foundation.framework in Frameworks */,
 				D7C862DA17986ABF0071A656 /* CoreGraphics.framework in Frameworks */,
+				1B81D0835FF34F77A3C3FF68 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +98,7 @@
 				D7C862FF17986ABF0071A656 /* FortuneTests */,
 				D7C862D417986ABF0071A656 /* Frameworks */,
 				D7C862D317986ABF0071A656 /* Products */,
+				F5E41C7EC13949319F3B4E69 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +118,7 @@
 				D7C862D717986ABF0071A656 /* Foundation.framework */,
 				D7C862D917986ABF0071A656 /* CoreGraphics.framework */,
 				D7C862F917986ABF0071A656 /* SenTestingKit.framework */,
+				F350A6D573C441C1B17711E4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +126,8 @@
 		D7C862DB17986ABF0071A656 /* Fortune */ = {
 			isa = PBXGroup;
 			children = (
+				D74D3F1417987E7E00911D05 /* FRTNClient.h */,
+				D74D3F1517987E7E00911D05 /* FRTNClient.m */,
 				D7C862E417986ABF0071A656 /* FRTNAppDelegate.h */,
 				D7C862E517986ABF0071A656 /* FRTNAppDelegate.m */,
 				D7C862ED17986ABF0071A656 /* FRTNViewController.h */,
@@ -167,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7C8630A17986ABF0071A656 /* Build configuration list for PBXNativeTarget "Fortune" */;
 			buildPhases = (
+				8586FDC211144C5589F6FAF2 /* Check Pods Manifest.lock */,
 				D7C862CE17986ABF0071A656 /* Sources */,
 				D7C862CF17986ABF0071A656 /* Frameworks */,
 				D7C862D017986ABF0071A656 /* Resources */,
+				78E3D496135747C4A222BBF6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +264,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		78E3D496135747C4A222BBF6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8586FDC211144C5589F6FAF2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		D7C862F617986ABF0071A656 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +317,7 @@
 				D7C862E217986ABF0071A656 /* main.m in Sources */,
 				D7C862E617986ABF0071A656 /* FRTNAppDelegate.m in Sources */,
 				D7C862EF17986ABF0071A656 /* FRTNViewController.m in Sources */,
+				D74D3F1617987E7E00911D05 /* FRTNClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +425,7 @@
 		};
 		D7C8630B17986ABF0071A656 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E41C7EC13949319F3B4E69 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fortune/Fortune-Prefix.pch";
@@ -392,6 +437,7 @@
 		};
 		D7C8630C17986ABF0071A656 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E41C7EC13949319F3B4E69 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fortune/Fortune-Prefix.pch";

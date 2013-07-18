@@ -10,7 +10,7 @@
 
 @interface FRTNViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
-@property (weak, nonatomic) IBOutlet UILabel *tapsLabel;
+
 
 - (void) updateLabelsFromTouches:(NSSet *) touches;
 

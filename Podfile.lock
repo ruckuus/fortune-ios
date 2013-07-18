@@ -1,0 +1,13 @@
+PODS:
+  - AFNetworking (0.9.1)
+  - ConciseKit (0.1.2)
+
+DEPENDENCIES:
+  - AFNetworking (= 0.9.1)
+  - ConciseKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 081ec3c1f4768c87ae79d69a96fcc9479e232e81
+  ConciseKit: 1e086a66d098ba160ca5faa86458a0431b280b30
+
+COCOAPODS: 0.22.2
