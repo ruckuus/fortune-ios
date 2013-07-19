@@ -12,6 +12,9 @@
 		D74D3F191798A40C00911D05 /* FRTNDrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D3F181798A40C00911D05 /* FRTNDrawImage.m */; };
 		D74D3F1B179904A900911D05 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D3F1A179904A900911D05 /* Accounts.framework */; };
 		D74D3F1D179904CF00911D05 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D3F1C179904CF00911D05 /* Social.framework */; };
+		D74D3F211799393000911D05 /* facebook32.png in Resources */ = {isa = PBXBuildFile; fileRef = D74D3F1E1799393000911D05 /* facebook32.png */; };
+		D74D3F221799393000911D05 /* stumbleupon32.png in Resources */ = {isa = PBXBuildFile; fileRef = D74D3F1F1799393000911D05 /* stumbleupon32.png */; };
+		D74D3F231799393000911D05 /* twitter32.png in Resources */ = {isa = PBXBuildFile; fileRef = D74D3F201799393000911D05 /* twitter32.png */; };
 		D7C862D617986ABF0071A656 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D517986ABF0071A656 /* UIKit.framework */; };
 		D7C862D817986ABF0071A656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D717986ABF0071A656 /* Foundation.framework */; };
 		D7C862DA17986ABF0071A656 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D917986ABF0071A656 /* CoreGraphics.framework */; };
@@ -47,6 +50,9 @@
 		D74D3F181798A40C00911D05 /* FRTNDrawImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTNDrawImage.m; sourceTree = "<group>"; };
 		D74D3F1A179904A900911D05 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D74D3F1C179904CF00911D05 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D74D3F1E1799393000911D05 /* facebook32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook32.png; sourceTree = "<group>"; };
+		D74D3F1F1799393000911D05 /* stumbleupon32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stumbleupon32.png; sourceTree = "<group>"; };
+		D74D3F201799393000911D05 /* twitter32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter32.png; sourceTree = "<group>"; };
 		D7C862D217986ABF0071A656 /* Fortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C862D517986ABF0071A656 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7C862D717986ABF0071A656 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -154,6 +160,9 @@
 		D7C862DC17986ABF0071A656 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D74D3F1E1799393000911D05 /* facebook32.png */,
+				D74D3F1F1799393000911D05 /* stumbleupon32.png */,
+				D74D3F201799393000911D05 /* twitter32.png */,
 				D7C862DD17986ABF0071A656 /* Fortune-Info.plist */,
 				D7C862DE17986ABF0071A656 /* InfoPlist.strings */,
 				D7C862E117986ABF0071A656 /* main.m */,
@@ -263,6 +272,9 @@
 				D7C862EA17986ABF0071A656 /* Default@2x.png in Resources */,
 				D7C862EC17986ABF0071A656 /* Default-568h@2x.png in Resources */,
 				D7C862F217986ABF0071A656 /* FRTNViewController.xib in Resources */,
+				D74D3F211799393000911D05 /* facebook32.png in Resources */,
+				D74D3F221799393000911D05 /* stumbleupon32.png in Resources */,
+				D74D3F231799393000911D05 /* twitter32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
