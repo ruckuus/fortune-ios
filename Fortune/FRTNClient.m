@@ -9,7 +9,8 @@
 #import "FRTNClient.h"
 #import <AFJSONRequestOperation.h>
 
-NSString * const fortuneBaseURLString = @"http://misskepik.com/fortune.php";
+//NSString * const fortuneBaseURLString = @"http://misskepik.com/fortune.php";
+NSString * const fortuneBaseURLString = @"http://frtnt.leongkui.me/v1/cookies";
 
 @implementation FRTNClient
 

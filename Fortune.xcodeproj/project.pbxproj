@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1B81D0835FF34F77A3C3FF68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F350A6D573C441C1B17711E4 /* libPods.a */; };
 		D74D3F1617987E7E00911D05 /* FRTNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D3F1517987E7E00911D05 /* FRTNClient.m */; };
+		D74D3F191798A40C00911D05 /* FRTNDrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D3F181798A40C00911D05 /* FRTNDrawImage.m */; };
+		D74D3F1B179904A900911D05 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D3F1A179904A900911D05 /* Accounts.framework */; };
+		D74D3F1D179904CF00911D05 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D3F1C179904CF00911D05 /* Social.framework */; };
 		D7C862D617986ABF0071A656 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D517986ABF0071A656 /* UIKit.framework */; };
 		D7C862D817986ABF0071A656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D717986ABF0071A656 /* Foundation.framework */; };
 		D7C862DA17986ABF0071A656 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C862D917986ABF0071A656 /* CoreGraphics.framework */; };
@@ -40,6 +43,10 @@
 /* Begin PBXFileReference section */
 		D74D3F1417987E7E00911D05 /* FRTNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTNClient.h; sourceTree = "<group>"; };
 		D74D3F1517987E7E00911D05 /* FRTNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTNClient.m; sourceTree = "<group>"; };
+		D74D3F171798A40C00911D05 /* FRTNDrawImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTNDrawImage.h; sourceTree = "<group>"; };
+		D74D3F181798A40C00911D05 /* FRTNDrawImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTNDrawImage.m; sourceTree = "<group>"; };
+		D74D3F1A179904A900911D05 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D74D3F1C179904CF00911D05 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D7C862D217986ABF0071A656 /* Fortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C862D517986ABF0071A656 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7C862D717986ABF0071A656 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74D3F1D179904CF00911D05 /* Social.framework in Frameworks */,
+				D74D3F1B179904A900911D05 /* Accounts.framework in Frameworks */,
 				D7C862D617986ABF0071A656 /* UIKit.framework in Frameworks */,
 				D7C862D817986ABF0071A656 /* Foundation.framework in Frameworks */,
 				D7C862DA17986ABF0071A656 /* CoreGraphics.framework in Frameworks */,
@@ -114,6 +123,8 @@
 		D7C862D417986ABF0071A656 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D74D3F1C179904CF00911D05 /* Social.framework */,
+				D74D3F1A179904A900911D05 /* Accounts.framework */,
 				D7C862D517986ABF0071A656 /* UIKit.framework */,
 				D7C862D717986ABF0071A656 /* Foundation.framework */,
 				D7C862D917986ABF0071A656 /* CoreGraphics.framework */,
@@ -128,6 +139,8 @@
 			children = (
 				D74D3F1417987E7E00911D05 /* FRTNClient.h */,
 				D74D3F1517987E7E00911D05 /* FRTNClient.m */,
+				D74D3F171798A40C00911D05 /* FRTNDrawImage.h */,
+				D74D3F181798A40C00911D05 /* FRTNDrawImage.m */,
 				D7C862E417986ABF0071A656 /* FRTNAppDelegate.h */,
 				D7C862E517986ABF0071A656 /* FRTNAppDelegate.m */,
 				D7C862ED17986ABF0071A656 /* FRTNViewController.h */,
@@ -318,6 +331,7 @@
 				D7C862E617986ABF0071A656 /* FRTNAppDelegate.m in Sources */,
 				D7C862EF17986ABF0071A656 /* FRTNViewController.m in Sources */,
 				D74D3F1617987E7E00911D05 /* FRTNClient.m in Sources */,
+				D74D3F191798A40C00911D05 /* FRTNDrawImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
