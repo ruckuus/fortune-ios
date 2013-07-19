@@ -11,6 +11,7 @@
 
 //NSString * const fortuneBaseURLString = @"http://misskepik.com/fortune.php";
 NSString * const fortuneBaseURLString = @"http://frtnt.leongkui.me/v1/cookies";
+NSString * const quotesBaseURLString = @"http://frtnt.leongkui.me/view/quotes";
 
 @implementation FRTNClient
 

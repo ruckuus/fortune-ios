@@ -10,6 +10,7 @@
 #import <AFHTTPClient.h>
 
 extern NSString * const fortuneBaseURLString;
+extern NSString * const quotesBaseURLString;
 
 @interface FRTNClient : AFHTTPClient
 

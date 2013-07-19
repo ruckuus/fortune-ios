@@ -19,6 +19,7 @@
     NSArray *jsonResponse;
     NSString *fortuneText;
     NSString *author;
+    NSString *sharedText;
     NSDictionary *list;
 }
 @end
@@ -44,7 +45,8 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         SLComposeViewController *tweet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweet setInitialText:fortuneText];
+
+        [tweet setInitialText:sharedText];
         [self presentViewController:tweet animated:YES completion:nil];
     }
     
@@ -92,8 +94,7 @@
     {
         SLComposeViewController*fvc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
-        [fvc setInitialText:fortuneText];
-        [fvc addImage:[UIImage imageNamed:@"lhasa"]];
+        [fvc setInitialText:sharedText];
         [self presentViewController:fvc animated:YES completion:nil];
     }
 #if 0
@@ -171,7 +172,15 @@
         NSString *temp = [jsonResponse valueForKey:@"quote"];
         fortuneText = [self flattenHTML:temp];
         author = [jsonResponse valueForKey:@"cite"];
+        NSString *quote_id = [jsonResponse valueForKey:@"id"];
+        
+        NSString *longText = [[NSString alloc] initWithFormat:@"%@ %@/%@", fortuneText, quotesBaseURLString, quote_id];
+        
+        sharedText = longText;
+        
         NSLog(@"Fortune Text: %@", fortuneText);
+        
+        NSLog(@"Fortune Text: %@", longText);
         
         self.twitterButtonPressed.enabled = TRUE;
         self.facebookButtonPressed.enabled = TRUE;
@@ -212,7 +221,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
   
-    self.messageLabel.text = @"Wait for a while ... plz";
+    self.messageLabel.text = @"Wait for a while ... lah";
     [self updateLabelsFromTouches:touches];
 }
 /*
